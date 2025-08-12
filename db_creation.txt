@@ -1,0 +1,18 @@
+---CREATION OF DATABASE TABLES
+---PASTE IN PostgreSQL
+---START testing!
+
+
+CREATE TABLE user_data(
+uid VARCHAR(255) PRIMARY KEY,
+pwd VARCHAR(255) NOT NULL,
+status VARCHAR(20) DEFAULT 'open',
+lock_time TIMESTAMP
+);
+
+CREATE TABLE user_logs(
+logid SERIAL PRIMARY KEY,
+login_time DATE NOT NULL,
+uid VARCHAR(255),
+FOREIGN KEY (uid) references user_data(uid)
+);
