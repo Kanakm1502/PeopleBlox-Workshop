@@ -3,7 +3,13 @@ STEPS FOR EXECUTION
 1. install node modules
 2. create database 'userdb' on postgreSQL using provided schema. (change password in index.js file)
 3. start the node server (node index.js)
-4. populate the tables and test the functionalities using postman.
+4. populate the tables and test the functionalities using postman. (Use the x-www-form-urlencoded body format in postman to enter values for username and password)
+   Format:
+      {
+         "username": "string",
+         "password": "string"
+      }
+
 
 
 FUNCTIONALITIES
