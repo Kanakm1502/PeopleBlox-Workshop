@@ -1,4 +1,6 @@
-STEPS FOR EXECUTION
+# **REGISTRATION AND LOGIN SYSTEM**
+
+### STEPS FOR EXECUTION
 
 1. install node modules
 2. create database 'userdb' on postgreSQL using provided schema. (change password in index.js file)
@@ -12,7 +14,7 @@ STEPS FOR EXECUTION
 
 
 
-FUNCTIONALITIES
+### FUNCTIONALITIES
 
 1. User can register.
    - Duplicate users are not allowed.
